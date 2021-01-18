@@ -1,0 +1,31 @@
+<div class="parent-container">
+    <form class="form-group" #questionAnswerForm="ngForm" (ngSubmit)="onSubmit()">
+          <div class="question-answer-parent">
+            <div class="question-answer">
+              <label for="exampleFormControlInput1">Enter question:</label>
+              <textarea
+                class="form-control"
+                rows="12"
+                [(ngModel)]="question"
+                name="something"
+                placeholder="Type your question...">
+              </textarea>
+            </div>
+            <div class="question-answer">
+              <label for="exampleFormControlInput1">Enter answer:</label>
+              <textarea
+                class="form-control"
+                rows="12"
+                [(ngModel)]="answer"
+                name="something"
+                placeholder="Type your answer...">
+              </textarea>
+            </div>
+        </div>
+          <div class="question-answer-buttons-parent">
+            <button mat-raised-button type="button" color="primary" [routerLink]="'/overview'">Cancel</button>
+            <button mat-raised-button type="button" color="primary" (click)="addQuestionAnswer(question, answer)">Add</button>
+            <button mat-raised-button type="submit" color="primary" (click)="submitForm(question, answer)" [routerLink]="'/overview'">Save</button>
+          </div>
+    </form>
+</div>

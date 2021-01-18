@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="exampleFormControlInput1">Question:</label>
+          <textarea class="form-control" rows="8" [(ngModel)]="question" name="something" placeholder="name"></textarea>
+        <div class="col-sm-2 form-group">
+          <label for="exampleFormControlInput1">Answer:</label>
+          <textarea class="form-control" rows="8" [(ngModel)]="answer" name="something" placeholder="name"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success" type="submit">Add</button>
+          <button class="btn btn-danger" type="submit">Delete</button>
+          <button class="btn btn-primary" type="submit">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
