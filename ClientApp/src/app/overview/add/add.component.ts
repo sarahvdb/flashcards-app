@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms'
 export class AddComponent implements OnInit {
   private question_answer_array = [];
 
-  @ViewChild(NgForm) questionAnswerForm: NgForm;
+  // @ViewChild(NgForm) questionAnswerForm: NgForm;
 
   constructor() { }
 
@@ -20,8 +20,8 @@ export class AddComponent implements OnInit {
     question_answer["question"] = question;
     question_answer["answer"] = answer;
     this.question_answer_array.push(question_answer)
-    console.log(this.question_answer_array)
-    this.questionAnswerForm.resetForm();
+    // console.log(this.question_answer_array)
+    // this.questionAnswerForm.resetForm();
   }
 
   submitForm(question, answer) {
